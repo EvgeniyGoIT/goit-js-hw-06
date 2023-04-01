@@ -11,7 +11,7 @@ const body = document.querySelector("body");
 button.addEventListener("click", newBackgroundColor);
 
 function newBackgroundColor() {
-  const currentBackgroundColor = window.getComputedStyle(body).backgroundColor;
-  body.style.backgroundColor = getRandomHexColor();
+  const currentBackgroundColor = getRandomHexColor();
+  body.style.backgroundColor = currentBackgroundColor;
   span.textContent = currentBackgroundColor;
 }
